@@ -91,5 +91,5 @@ $ git push
 7. When there are updates to the homework starter files, pull the new updates from the ‘homework’ remote.
 
 ```console
-$ git pull origin main
+$ git pull labs main
 ```
