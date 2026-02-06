@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,12 +7,56 @@
     <title>Exercise 04 - Modals</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="../_styles/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <h1>04 - Bootstrap Modal</h1>
-    <!-- Add your code here -->
+    <div class="text-center">
+      <!-- Add your code here -->
+      <p>Click on the button below for more information inside a modal</p>
+
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        More details
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">More Details</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              Amtosaurus Phyllodon Basutodon Leyesaurus Velocipes Hexinlusaurus
+              Actiosaurus Vitakridrinda Achelousaurus Mongolosaurus Eotrachodon
+              Zhongyuansaurus Parasaurolophus
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
+
