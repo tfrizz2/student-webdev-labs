@@ -97,6 +97,13 @@ a {
   margin-bottom: 16px;
 }
 
+.section-title-right {
+  text-align: right;
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
 .section-subtitle {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -114,8 +121,10 @@ a {
   min-height: 64vh;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, rgba(52, 73, 66, 0.86), rgba(52, 73, 66, 0.58)),
-    url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1700&q=80") center/cover;
+  background:
+    linear-gradient(135deg, rgba(52, 73, 66, 0.86), rgba(52, 73, 66, 0.58)),
+    url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1700&q=80")
+      center/cover;
   color: #fff;
   text-align: center;
   padding: 80px 24px;
@@ -159,8 +168,32 @@ a {
 
 .grid-2 {
   display: grid;
+  /*display: flex;*/
+  /*flex-direction: column;*/
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
+}
+
+.split {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.split.reverse {
+  flex-direction: row-reverse;
+}
+
+.split img {
+  width: 40%;
+  max-width: 420px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.split split-text {
+  flex: 1;
 }
 
 .card {
@@ -203,12 +236,12 @@ a {
   font-weight: 700;
 }
 
-.callout {
+/*.callout {
   background: #eef3f1;
   border-left: 4px solid var(--text-main);
   padding: 16px;
   border-radius: 6px;
-}
+}*/
 
 .contact-list {
   list-style: none;
