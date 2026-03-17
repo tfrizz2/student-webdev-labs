@@ -247,13 +247,6 @@ a {
   font-weight: 700;
 }
 
-/*.callout {
-  background: #eef3f1;
-  border-left: 4px solid var(--text-main);
-  padding: 16px;
-  border-radius: 6px;
-}*/
-
 .contact-list {
   list-style: none;
   display: grid;
