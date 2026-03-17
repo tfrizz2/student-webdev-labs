@@ -49,7 +49,13 @@
 
           <section class="form-block" aria-label="Contact form">
             <h2 style="margin-bottom: 12px">Contact Form</h2>
-            <form action="#" method="post">
+            <form
+              action="#"
+              method="post"
+              id="contactForm"
+              name="myForm"
+              novalidate
+            >
               <div>
                 <label for="fullName">Full Name</label>
                 <input id="fullName" name="fullName" type="text" required />
@@ -63,16 +69,6 @@
               <div>
                 <label for="phone">Phone Number</label>
                 <input id="phone" name="phone" type="tel" required />
-              </div>
-
-              <div>
-                <label for="preferredContact">Preferred Contact Method</label>
-                <select id="preferredContact" name="preferredContact" required>
-                  <option value="">Select one</option>
-                  <option value="phone">Phone</option>
-                  <option value="email">Email</option>
-                  <option value="text">Text</option>
-                </select>
               </div>
 
               <div>
@@ -90,5 +86,6 @@
     <footer>
       <p>Designed by Trenton Frizzell</p>
     </footer>
+    <script src="submit.js"></script>
   </body>
 </html>
